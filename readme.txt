@@ -16,6 +16,3 @@ Hosting ~ ELB
 - Product Improvement
 - Promotion
 - New Features (SMS Campaigns etc)
-YO!
-hello
-hillo

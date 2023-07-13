@@ -7,7 +7,7 @@ from PIL import Image
 import smtplib
 from string import Template
 from email.message import EmailMessage
-# from pathlib import path
+
 # directory = sys.argv[1]
 
 directory = "dir"
