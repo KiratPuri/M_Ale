@@ -10,7 +10,6 @@ from email.message import EmailMessage
 # from pathlib import path
 # directory = sys.argv[1]
 
-
 st.title("M_Ale Dashboard")
 sub = st.text_input("Please enter the Subject.")
 id = st.text_input("Please enter your email ID.")
@@ -21,10 +20,10 @@ but = st.button("Send")
 html = Template(Path("index.html").read_text())
 if uploaded_file is not None and but == True and sub != "":
     directory = id.split("@")[0]
-    
+
     if "." in directory:
         directory = directory.split(".")[0]
-
+        
     if not os.path.exists(directory):
         os.makedirs(directory)
 
@@ -50,6 +49,5 @@ if uploaded_file is not None and but == True and sub != "":
             smtp.login("kanwaldeep.puri@gmail.com", "vtzzxtfobortpwhc")
             smtp.send_message(mes)
             print("message sent!!")
-
 
 
