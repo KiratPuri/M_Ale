@@ -23,6 +23,8 @@ uploaded_file = st.file_uploader("Drag and Drop your mail recipient list here as
 but = st.button("Send")
 html = Template(Path("index.html").read_text())
 
+app = Flask(__name__)
+
 @app.route('/image_link')
 def hello_img():
     print("Hurrrrrrreeeeeeeeeeeeee!!!!!!!!!!!!!!!!!!!!!!!!")
