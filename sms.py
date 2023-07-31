@@ -62,7 +62,7 @@ def get_shareable_link(image_path):
         return None
 
 
-if uploaded_file is not None and but == True and sub != "":
+if uploaded_file is not None and but == True and sub != "" and password == "1qaz":
     cred = credentials.Certificate("male-8b6f5-firebase-adminsdk-qza06-e7d8fbd3e5.json")
     firebase_admin.initialize_app(cred, {'storageBucket': 'male-8b6f5.appspot.com'})
     
